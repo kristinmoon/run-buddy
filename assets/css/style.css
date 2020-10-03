@@ -333,6 +333,7 @@ section {
     justify-content: space-around;
 }
 
+
 .trainer {
     margin: 20px;
     background: var(--secondary-color);
@@ -340,8 +341,42 @@ section {
     flex: 1;
 }
 
-.trainer img {
+.trainer div {
+    position: relative;
+
+}
+.trainer-img {
     width: 100%;
+    min-height: 300px;
+    background-size: cover;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+}
+
+.trainer-img::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(252, 225, 56, 0.3);
+    background-image: linear-gradient(rgba(252, 225, 56, 0.3), var(--secondary-color));
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.trainer-img h3 {
+    position: relative;
+    z-index: 9;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.trainer-img h4 {
+    position: relative;
+    z-index: 10;
+    font-size: 22px;
+    font-weight: lighter;
 }
 
 .trainer-bio {
@@ -375,6 +410,17 @@ section {
     font-size: 17px;
 }
 
+.trainer-1 {
+    background-image: url("../images/trainer-1.jpg")
+}
+
+.trainer-2 {
+    background-image: url("../images/trainer-2.jpg")
+}
+
+.trainer-3 {
+    background-image: url("../images/trainer-3.jpg")
+}
 .contact {
     text-align: center;
     background: var(--secondary-color);
